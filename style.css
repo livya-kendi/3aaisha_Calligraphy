@@ -31,7 +31,7 @@ header{
     justify-content: space-between;
     background: transparent;
     padding: 30px 18%;
-    transition: 3s;
+    transition: 5s;
 }
 .logo{ 
    font-size: 50px;
@@ -42,7 +42,7 @@ header{
    border-radius: 2px;
    transform: scale(1.2);
    border-style: hidden;
-   background-image: url("logo1.webp");
+   /*background-image: url("logo1.webp");*/
    outline-style: groove;
    outline-color: #C7AB59;
    outline-width: 5px;
@@ -55,7 +55,7 @@ header{
 }
 .navlist li{
     font-size: 40px;
-    color: #B9732F;
+    color: #705103;
     font-weight: bold; 
     padding-right: 4px;
 }
@@ -64,16 +64,13 @@ header{
 }
 
  .navlist li:hover{
-
-    text-decoration: underline;
-    text-decoration-color: #C7AB59;
-    color: #8F5B34;
+    color: #B9732F;
     transform: scale(1.2);
 }
 
 #menu-icon{
     font-size: 35px;
-    color: #C7AB59;
+    color: #705103;
     z-index: 10001;
     cursor: pointer;
     display: none;
