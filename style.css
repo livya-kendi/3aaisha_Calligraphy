@@ -9,7 +9,7 @@
 }
 
 :root{
-   background-color: #DED2A8; 
+   background-color: #fffbff; 
    --text-color: #C7AB59;
    --main-color:: white;
    --big-font:5rem;
@@ -35,14 +35,17 @@ header{
 }
 .logo{ 
    font-size: 50px;
-   background-color: black;
+   
    color: white;
    padding: 10px;
    margin-right: 40px;
    border-radius: 2px;
    transform: scale(1.2);
    border-style: hidden;
-   background-image: url("logobkground.jpg");
+   background-image: url("logo1.webp");
+   outline-style: groove;
+   outline-color: #C7AB59;
+   outline-width: 5px;
 }
 .logo span{
     color: #705103;
