@@ -35,14 +35,13 @@ header{
 }
 .logo{ 
    font-size: 50px;
-   
    color: white;
    padding: 10px;
    margin-right: 40px;
    border-radius: 2px;
    transform: scale(1.2);
    border-style: hidden;
-   /*background-image: url("logo1.webp");*/
+   background-image: url("logo2.jpg");
    outline-style: groove;
    outline-color: #C7AB59;
    outline-width: 5px;
@@ -50,13 +49,16 @@ header{
 .logo span{
     color: #705103;
 }
+.logo:hover{
+    transform: scale(1.2);
+}
 .navlist{
    display: flex; 
 }
 .navlist li{
     font-size: 40px;
     color: #705103;
-    font-weight: bold; 
+    font-weight: bolder; 
     padding-right: 4px;
 }
 .navlist li a{
@@ -74,4 +76,85 @@ header{
     z-index: 10001;
     cursor: pointer;
     display: none;
+}
+#home{
+    padding: 150px 18%;
+}
+.home{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background: url(../3aaisha_Calligraphy/logo4.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 4rem;
+}
+.home-img img{
+    width: 350px;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: #C7AB59;
+    max-width: 100%;
+    height: auto;
+}
+.home-text h1{
+    margin: 10px 0px 25px;
+    font-size: var(--big-font);
+    line-height: 1;
+    font-weight: bold;
+    color: #705103;
+}
+.home-text h5{
+    margin-bottom: 23px;
+    font-size: 30px;
+    font-weight: bolder;  
+}
+.home-text h5 span{
+    color: #A56C6C;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.home-text h3{
+  font-size: 32px;  
+  font-weight: bolder;
+}
+.home-text p{
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.social a{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #B9732F;
+    color: #705103;
+    font-size: 25px;
+    margin-right: 22px;
+    margin-bottom: 30px;
+}
+.social a:hover{
+   transform: scale(1.2); 
+   background: #C38888;
+   transition: .3s;
+}
+.home-text .btn{
+   display: inline-block; 
+   color: #915858;
+   background-color: #C7AB59;
+   font-size: 30px;
+   padding: 10px 40px;
+   font-weight: bolder;
+   border-radius: 30px;
+   transition: ease .40s;
+}
+.home-text .btn:hover{
+    transform: scale(1.1);
 }
