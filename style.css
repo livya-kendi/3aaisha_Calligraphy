@@ -158,3 +158,13 @@ header{
 .home-text .btn:hover{
     transform: scale(1.1);
 }
+.services .items .box{
+    background-color: red;
+   margin-top: 20px;
+   display: flex;
+   padding-left: 200px;
+    
+}
+ .sub-img img{
+    width: 400px;
+ }
