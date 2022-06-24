@@ -55,6 +55,7 @@ header{
 }
 .navlist{
    display: flex; 
+   
 }
 .navlist li{
     font-size: 40px;
@@ -64,10 +65,15 @@ header{
 }
 .navlist li a{
    padding: 10px 10px;
+   color: #705103;
+   font-weight: bolder;
 }
 
- .navlist li:hover{
-    color: #B9732F;
+ .navlist li a:hover{
+    color: #B9732F; 
+     
+}
+.navlist li:hover{
     transform: scale(1.2);
 }
 
@@ -199,6 +205,13 @@ header{
     padding: 60px;
     margin-bottom: 20px;
  }
+ .services h2{
+    padding: 20px;
+    color: #FDD9E5;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 45px;
+ }
 .box h3{
     font-size: 32px;
     font-weight: bolder;
@@ -247,4 +260,104 @@ header{
     font-weight: bold;
     margin: 8px 0px 25px;
     letter-spacing: 1px;
+}
+.samples{
+    align-content: center;
+    background: #0D0D0D;
+    display: flexbox;
+}
+.col{
+    position: relative; 
+}
+.col img{
+    width: 500px; 
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 12px;
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #C7AB59;
+    padding: 15px;
+}
+.layer h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #C7AB59;
+    margin: 7px 0px 20px;
+}
+.samplecontent{
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(350px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.contacts{
+    background: url(../3aaisha_Calligraphy/logo4.jpg);
+    width: 64%;
+    margin: 100px auto;
+    padding: 70px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    background-size: cover;
+}
+.center h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #915858;
+}
+.center h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #915858;
+}
+.center p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color:#915858;
+}
+.contacts .action form input[type="email"]{
+    max-width: 100%;
+    width: 470px;
+    padding: 12px 15px;
+    background:#FDD9E5;
+    color: black;
+    border: none;
+    margin: 0 10px 20px 0;
+    border-radius: 30px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.contacts .action form input[type="submit"]{
+    padding: 12px 25px;
+    background:#B9732F;
+    color: black;
+    border: none;
+    outline: none;
+    margin: 0 10px 20px 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.end{
+    text-align: center;
+    padding: 40px;
+}
+.end p{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
