@@ -9,10 +9,69 @@
 }
 
 :root{
-   background-color: white; 
-   --text-color: rgba(255, 217, 0, 0.852);
+   background-color: #DED2A8; 
+   --text-color: #C7AB59;
    --main-color:: white;
    --big-font:5rem;
    --h2-font:3em;
    --p-font:1.1rem;
+}
+body{
+    background-color: white;
+    color: black
+}
+header{
+    position: fixed;
+    width:100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: 3s;
+}
+.logo{ 
+   font-size: 50px;
+   background-color: black;
+   color: white;
+   padding: 10px;
+   margin-right: 40px;
+   border-radius: 2px;
+   transform: scale(1.2);
+   border-style: hidden;
+   background-image: url;
+}
+.logo span{
+    color: #E3D477;
+}
+.navlist{
+   display: flex; 
+}
+.navlist li{
+    font-size: 40px;
+    color: #B9732F;
+    font-weight: bold; 
+    padding-right: 4px;
+}
+.navlist li a{
+   padding: 10px 10px;
+}
+
+ .navlist li:hover{
+
+    text-decoration: underline;
+    text-decoration-color: #C7AB59;
+    color: #8F5B34;
+    transform: scale(1.2);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #C7AB59;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
 }
