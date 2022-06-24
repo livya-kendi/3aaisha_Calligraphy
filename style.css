@@ -17,8 +17,9 @@
    --p-font:1.1rem;
 }
 body{
-    background-color: white;
-    color: black
+    background-color: #fffbff;
+    color: black;
+   /* background: url(../3aaisha_Calligraphy/logo4.jpg);*/
 }
 header{
     position: fixed;
@@ -95,7 +96,7 @@ header{
 }
 .home-img img{
     width: 350px;
-    border-radius: 20px;
+    border-radius: 50%;
     border-style: groove;
     border-color: #C7AB59;
     max-width: 100%;
@@ -134,8 +135,8 @@ header{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #B9732F;
-    color: #705103;
+    background: #705103;
+    color: #FDD9E5;
     font-size: 20px;
     margin-right: 22px;
     margin-bottom: 30px;
@@ -145,7 +146,7 @@ header{
    background: #C38888;
    transition: .3s;
 }
-.home-text .btn{
+.btn{
    display: inline-block; 
    color: #915858;
    background-color: #C7AB59;
@@ -158,18 +159,92 @@ header{
 .home-text .btn:hover{
     transform: scale(1.1);
 }
-.services .items .box{
-    background-color: red;
+/*.services .items .box{
    margin-top: 20px;
    display: flex;
    padding-left: 200px;
+} */
     
+.items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 1rem;
+    align-items: center;
+    text-align: center;
+
 }
+
  .sub-img img{
-    width: 400px;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    margin: 30px;
  }
  header.sticky{
-    background: #C38888;
+    background: #C7AB59;
     padding: 15px 18%;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
  }
+
+ .box{
+    padding: 45px 45px 45px 45px;
+    transition: ease .50s;
+    cursor: pointer;
+    background: #fffbff;
+    box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+    border-radius: 12px;
+ }
+ .services{
+    background: #705103;
+    padding: 60px;
+    margin-bottom: 20px;
+ }
+.box h3{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.box p{
+    font-size: 25px;
+}
+.box:hover{
+    background: #FDD9E5;
+    box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+    border-radius: 12px;
+    will-change: transform;
+    transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 2rem;
+    margin: 200px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.about-img img{
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border-style: groove;
+    border-color: #C7AB59;
+    max-width: 100%;
+    background-color: #C7AB59;
+}
+.about-text h3{
+    color: #705103;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 8px 0px 25px;
+    letter-spacing: 0.5px;
+}
+.about-text h4{
+    color: #705103;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 8px 0px 25px;
+    letter-spacing: 1px;
+}
