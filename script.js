@@ -1,5 +1,12 @@
-const header = document.querySelector(header);
+window.onscroll = function() {myFunction()};
 
-window.addEventListener("scroll", function() {
-    header.classList.toggle("sticky", window.scrollY > 0 );
-});
+var navlist = document.getElementById("navlist");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
