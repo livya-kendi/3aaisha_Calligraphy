@@ -42,10 +42,10 @@ header{
    border-radius: 2px;
    transform: scale(1.2);
    border-style: hidden;
-   background-image: url(../AISHA/);
+   background-image: url("logobkground.jpg");
 }
 .logo span{
-    color: #E3D477;
+    color: #705103;
 }
 .navlist{
    display: flex; 
