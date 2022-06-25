@@ -17,6 +17,7 @@
    --p-font:1.1rem;
 }
 body{
+    width: 1005;
     background-color: #fffbff;
     color: black;
    /* background: url(../3aaisha_Calligraphy/logo4.jpg);*/
@@ -82,14 +83,12 @@ header{
     color: #705103;
     z-index: 10001;
     cursor: pointer;
-    display: none;
 }
 #home{
     padding: 150px 18%;
 }
 .home{
     min-height: 100vh;
-    height: 100%;
     width: 100%;
     background: url(../3aaisha_Calligraphy/logo4.jpg);
     background-size: cover;
@@ -165,11 +164,9 @@ header{
 .home-text .btn:hover{
     transform: scale(1.1);
 }
-/*.services .items .box{
-   margin-top: 20px;
-   display: flex;
-   padding-left: 200px;
-} */
+.about-text .btn:hover{
+    transform: scale(1.1);
+}
     
 .items{
     display: grid;
@@ -329,6 +326,25 @@ header{
     margin-bottom: 3px;
     color:#915858;
 }
+.contactitems a{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #705103;
+    color: #FDD9E5;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-right: 22px;
+    margin-bottom: 20px;
+}
+.contactitems a:hover{
+    transform: scale(1.1); 
+    background: #C38888;
+    transition: .3s;
+ }
 .contacts .action form input[type="email"]{
     max-width: 100%;
     width: 470px;
@@ -361,3 +377,29 @@ header{
     letter-spacing: 1px;
     font-weight: bold;
 }
+
+@media screen and (max-width: 1280px) {
+    
+  }
+  @media screen and (max-width: 1024px) {
+    .home
+    {grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        grid-gap: 4rem;}
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: blue;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    body {
+      background-color: blue;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    body {
+      background-color: blue;
+    }
+  }
