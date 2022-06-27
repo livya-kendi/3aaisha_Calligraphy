@@ -309,7 +309,7 @@ body{
 }
 .contacts{
     background: url(../3aaisha_Calligraphy/logo4.jpg);
-    width: 64%;
+    width: 100%;
     margin: 100px auto;
     padding: 70px 150px;
     display: flex;
@@ -319,8 +319,28 @@ body{
     border-radius: 12px;
     background-size: cover;
 }
-.comments h2{
+.comments{
+    display: flexbox;
+    align-items: center;
+    justify-content: center; 
+   
+}
+.contacts h2{
     font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #915858;
+}
+
+.contacts h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #915858;
+}
+
+.comments h3{
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 3px;
     color: #915858;
@@ -368,15 +388,17 @@ body{
     font-size: 18px;
 }
 textarea{
+    margin-right: 10px;
     align-self: center;
-    height: 50px;
-    width: 150%;
+    height: 80px;
+    width: 100%;
     background:#FDD9E5;
     color: black;
     border: none;
-    border-radius: 30px;
-    font-size: 26px;
+    border-radius: 20px;
+    font-size: 30px;
     font-weight: bold;
+    padding: 20px;
 }
 input[type="submit"], button{
     padding: 10px 15px;
@@ -386,9 +408,6 @@ input[type="submit"], button{
     background:#B9732F;
     font-size: 25px;
     margin: 10px;
-}
-.commentsbtn{
-    display: none;
 }
 .end{
     text-align: center;
@@ -406,6 +425,15 @@ input[type="submit"], button{
         grid-template-rows: repeat(2, 1fr);
         align-items: center;
         grid-gap: 4rem;}
+
+        .nav{
+            position: sticky;
+            display: flex; 
+            padding-left: 200px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            
+         }
   }
 
   @media screen and (max-width: 768px) {
@@ -442,6 +470,16 @@ input[type="submit"], button{
         }
         .about-text{
             padding-right: 10px;}
+
+        .logo{
+            margin-left: 200px;
+        }
+        .nav{
+            padding-left: 100px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            
+         }
   }
   @media screen and (max-width: 640px) {
     .about{
@@ -454,6 +492,15 @@ input[type="submit"], button{
         text-align: center;
         justify-content: center;
     }
+    .logo{
+        margin-left: 190px;
+    }
+    .nav{
+        padding-left: 70px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        
+     }
   }
   @media screen and (max-width: 480px) {
     #home{
@@ -494,5 +541,80 @@ input[type="submit"], button{
             border-radius: 30px;
             cursor: pointer;
             font-size: 18px;
+        }
+        .logo{
+            margin-left: 120px;
+        }
+        .nav{
+            padding-left: 0px;
+            margin-top: 50px;
+            margin-bottom: 40px;  
+         }
+         
+        .nav li a{
+           padding: 1px 2px;
+           color: #705103;
+           font-weight: bolder;
+        }
+        .logo{
+            margin-left: 90px;
+        }
+        .contacts h2{
+            margin: 1px;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 3px;
+            color: #915858;
+        }
+        
+        .contacts h3{
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 3px;
+            color: #915858;
+        }
+        
+        .comments h3{
+            width: 100%;
+            font-size: 35px;
+            font-weight: bold;
+            margin: 3px;
+            color: #915858;
+        }
+        .contactitems a{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #705103;
+            color: #FDD9E5;
+            font-size: 25px;
+            margin-top: 15px;
+            margin-right: 22px;
+            margin-bottom: 20px;
+        }
+        .contacts{
+            width: 100%;
+            padding: 20px;
+        }
+        textarea{
+            justify-content: center;
+            align-self: center;
+            height: 70px;
+            width: 100%;
+            color: black;
+            border: none;
+            border-radius: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+        }
+        input[type="submit"], button{
+            padding: 10px 15px;
+            font-size: 20px;
+            margin-right: 10px;
+            display: inline-flex;
         }
     }
