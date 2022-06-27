@@ -1,13 +1,13 @@
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementsByClassName("navbar");
+var header = document.getElementsByClassName("header");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    header.classList.add("sticky")
   } else {
-    navbar.classList.remove("sticky");
+    header.classList.remove("sticky");
   }
 }
 
@@ -30,10 +30,11 @@ clear.onclick = function() {
   field.value = '';
 }
 
-document.getElementById('form').addEventListener('submit', function(e){
+const form =document.getElementById('form')
+form.addEventListener('submit', function(e){
   e.preventDefault();
 
-const userComments = document.getElementById('txt').value
+const userComments = e.target.txt.value
 
 const formData = new FormData();
 formData.append('user-comments', userComments);
@@ -48,3 +49,9 @@ fetch('http://localhost:3000/posts' ,{
 .catch(err => console.log(err));
 
 })
+
+const reviewscontainer = document.getElementsByClassName("reviewscontainer")
+function addReview(review){
+  const list = document.createElement('li')
+    .reviewscontainer. append'li'
+}
