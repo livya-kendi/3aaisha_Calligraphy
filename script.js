@@ -1,15 +1,3 @@
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementsByClassName("header");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    header.classList.add("sticky")
-  } else {
-    header.classList.remove("sticky");
-  }
-}
 
 var field = document.querySelector('textarea');
 var backUp = field.getAttribute('placeholder');
@@ -30,28 +18,59 @@ clear.onclick = function() {
   field.value = '';
 }
 
-const form =document.getElementById('form')
-form.addEventListener('submit', function(e){
-  e.preventDefault();
+function loadReviews (){
+  const fetchData = fetch("http://localhost:3000/reviews")
+  .then(response => response.json())
+  .then(reviewsData => reviewsData.forEach(review => renderReviews(review)));
+  
 
-const userComments = e.target.txt.value
-
-const formData = new FormData();
-formData.append('user-comments', userComments);
-
-fetch('http://localhost:3000/posts' ,{
- method: "POST",
- body: formData,
-})
-
-.then(res => res.json())
-.then(data => console.log(data))
-.catch(err => console.log(err));
-
-})
-
-const reviewscontainer = document.getElementsByClassName("reviewscontainer")
-function addReview(review){
-  const list = document.createElement('li')
-    .reviewscontainer. append'li'
+  return fetchData
 }
+
+function renderReviews(reviews) {
+
+  const commentsContainer = document.querySelector('#reviewscontainer');
+  const li = document.createElement('li');
+  li.className = "review-list"
+  li.innerHTML = reviews.review;
+  // debugger
+  commentsContainer.append(li);
+ 
+}
+
+//Post review
+
+const reviewForm = document.querySelector('#form');
+
+reviewForm.addEventListener('submit', handleSubmit)
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  let reviewObject = {
+    review:  event.target.txt.value
+  }
+
+  renderReviews(reviewObject)
+  addReview(reviewObject)
+  reviewForm.reset()
+}
+
+function addReview(reviewObject){
+  fetch("http://localhost:3000/reviews", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+
+    },
+    body: JSON.stringify(reviewObject),
+  })
+  .then(response => response.json())
+  .then(reviewData => console.log(reviewData))
+  .catch(err => console.error(err))
+}
+
+
+loadReviews()
+renderReviews()
+addReview()

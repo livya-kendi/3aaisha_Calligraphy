@@ -1,37 +1,28 @@
 {
-  "posts": [
+  "reviews": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "review": "Great artist"
     },
     {
-      "id": 2
+      "id": 2,
+      "review": "Insiprational works"
     },
     {
-      "id": 3
+      "id": 3,
+      "review": "The artworks are amazing"
     },
     {
+      "review": "test",
       "id": 4
     },
     {
+      "review": "Test 2",
       "id": 5
     },
     {
+      "review": "Load ",
       "id": 6
-    },
-    {
-      "id": 7
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

@@ -20,12 +20,13 @@ body{
     background-color: #fffbff;
     color: black;
 }
- .header{
-    border: red;
- }
-
+header{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 100px;
+}
 .logo{ 
-   margin-left: 300px;
+   margin-left: 220px;
    font-size: 50px;
    color: white;
    padding: 10px;
@@ -37,6 +38,8 @@ body{
    outline-style: groove;
    outline-color: #C7AB59;
    outline-width: 5px;
+   position: fixed;
+   z-index: 1000;
 }
 .logo span{
     color: #705103;
@@ -45,10 +48,12 @@ body{
     transform: scale(1.2);
 }
 .nav{
+   position: fixed;
    display: flex; 
    padding-left: 800px;
    margin-top: 5px;
    margin-bottom: 40px;
+   z-index: 1000;
    
 }
 .nav li{
@@ -59,12 +64,14 @@ body{
 }
 .nav li a{
    padding: 10px 10px;
-   color: #705103;
+   color: black;
    font-weight: bolder;
+   background: #C38888;
+   border-radius: 14px;
 }
 
  .nav li a:hover{
-    color: #B9732F; 
+    color: #C7AB59; 
      
 }
 .nav li:hover{
@@ -81,10 +88,10 @@ body{
     display: none;
 }
 #home{
-    padding: 150px 18%;
+    padding: 15px 18%;
 }
 .home{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background: url(../3aaisha_Calligraphy/logo4.jpg);
     background-size: cover;
@@ -178,12 +185,6 @@ body{
     height: auto;
     margin: 30px;
  }
- header.sticky{
-    background: #C7AB59;
-    padding: 15px 18%;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
-    position: fixed;
- }
 
  .box{
     padding: 45px 45px 45px 45px;
@@ -225,7 +226,7 @@ body{
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
     grid-gap: 2rem;
-    margin: 20px;
+    margin: 60px;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -242,6 +243,7 @@ body{
 }
 .about-text{
     padding-right: 200px;
+    padding: 20px;
 }
 .about-text h3{
     color: #705103;
@@ -274,8 +276,11 @@ body{
     border-radius: 12px;
 }
 .heading{
+    padding-top: 70px;
+}
+.heading h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     color: #C7AB59;
 }
