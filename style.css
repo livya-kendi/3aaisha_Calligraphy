@@ -20,21 +20,9 @@ body{
     background-color: #fffbff;
     color: black;
 }
-/* header{
-    position: relative;
-    width:100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #C7AB59;
-    padding: 5px 15%;
-    padding-top: 30px;
-    transition: 5s;
-    padding-right: 400px;
-}*/
+ .header{
+    border: red;
+ }
 
 .logo{ 
    margin-left: 300px;
@@ -194,7 +182,7 @@ body{
     background: #C7AB59;
     padding: 15px 18%;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
-    position: relative;
+    position: fixed;
  }
 
  .box{
