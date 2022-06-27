@@ -17,13 +17,11 @@
    --p-font:1.1rem;
 }
 body{
-    width: 1005;
     background-color: #fffbff;
     color: black;
-   /* background: url(../3aaisha_Calligraphy/logo4.jpg);*/
 }
 header{
-    position: fixed;
+    position: relative;
     width:100%;
     top: 0;
     right: 0;
@@ -174,7 +172,6 @@ header{
     grid-gap: 1rem;
     align-items: center;
     text-align: center;
-
 }
 
  .sub-img img{
@@ -187,6 +184,7 @@ header{
     background: #C7AB59;
     padding: 15px 18%;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    position: relative;
  }
 
  .box{
@@ -229,7 +227,7 @@ header{
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
     grid-gap: 2rem;
-    margin: 200px;
+    margin: 20px;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -243,6 +241,9 @@ header{
     border-color: #C7AB59;
     max-width: 100%;
     background-color: #C7AB59;
+}
+.about-text{
+    padding-right: 200px;
 }
 .about-text h3{
     color: #705103;
@@ -262,6 +263,7 @@ header{
     align-content: center;
     background: #0D0D0D;
     display: flexbox;
+    padding: 50px;
 }
 .col{
     position: relative; 
@@ -278,7 +280,6 @@ header{
     font-size: 40px;
     font-weight: bold;
     color: #C7AB59;
-    padding: 15px;
 }
 .layer h3{
     text-align: center;
@@ -378,28 +379,99 @@ header{
     font-weight: bold;
 }
 
-@media screen and (max-width: 1280px) {
-    
-  }
   @media screen and (max-width: 1024px) {
     .home
-    {grid-template-columns: repeat(1, 1fr);
+    {  grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
         align-items: center;
         grid-gap: 4rem;}
   }
+
   @media screen and (max-width: 768px) {
-    body {
-      background-color: blue;
-    }
+    .items
+    {display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 2rem;
+        align-items: center;
+        text-align: center;}
+
+        .sub-img img{
+            width: 200px;
+            max-width: 100%;
+            height: auto;
+            margin: 4px;
+         }
+         .sub-img .btn{
+            font-size: 25px;
+            padding: 10px 30px;
+         }
+         .about{
+          margin-bottom: 40px;
+        }
+        .about-img img{
+            width: 350px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border-style: groove;
+            border-color: #C7AB59;
+            max-width: 100%;
+            background-color: #C7AB59;
+        }
+        .about-text{
+            padding-right: 10px;}
   }
   @media screen and (max-width: 640px) {
-    body {
-      background-color: blue;
+    .about{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        grid-gap: 2rem;
+        margin: 20px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
   }
   @media screen and (max-width: 480px) {
-    body {
-      background-color: blue;
+    #home{
+        padding: 80px 18%;
     }
-  }
+    .home{
+        min-height: 100vh;
+        width: 100%;
+        background: url(../3aaisha_Calligraphy/logo4.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: grid;
+        align-items: center;
+        grid-gap: 4rem;
+    }
+    
+    .home-text h1{
+        font-size: 65px;}
+    
+    .col img{
+         width: 450px; 
+        }
+        .contacts{
+            width: 100%;
+        }
+       
+        .contacts .action form input[type="email"]{
+            width: 430px;
+        }
+        .contacts .action form input[type="submit"]{
+            padding: 12px 25px;
+            background:#B9732F;
+            color: black;
+            border: none;
+            outline: none;
+            margin: 0 10px 20px 0;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    }
