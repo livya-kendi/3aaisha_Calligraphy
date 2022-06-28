@@ -19,10 +19,9 @@ clear.onclick = function() {
 }
 
 function loadReviews (){
-  const fetchData = fetch("http://localhost:3000/reviews")
+  const fetchData = fetch("https://livya-kendi.github.io/3aaisha_Calligraphy/db.json")
   .then(response => response.json())
-  .then(reviewsData => reviewsData.forEach(review => renderReviews(review)));
-  
+  .then(reviewsData => reviewsData.reviews.forEach(review => renderReviews(review)));
 
   return fetchData
 }
