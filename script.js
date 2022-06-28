@@ -56,7 +56,7 @@ function handleSubmit(event) {
 }
 
 function addReview(reviewObject){
-  fetch("http://localhost:3000/reviews", {
+  fetch("https://livya-kendi.github.io/3aaisha_Calligraphy/db.json", {
     method: "POST",
     headers: {
       "content-type": "application/json",
