@@ -5,7 +5,8 @@
     font-family: 'Tangerine', cursive;
     list-style: none;
     text-decoration: none;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+
 }
 
 :root{
@@ -555,9 +556,6 @@ input[type="submit"], button{
             cursor: pointer;
             font-size: 18px;
         }
-        .logo{
-            margin-left: 120px;
-        }
         .nav{
             padding-left: 0px;
             margin-top: 100px;
@@ -636,4 +634,28 @@ input[type="submit"], button{
         .about-text{
             width: 100%;
         }
+    }
+    @media screen and (max-width: 400px){
+       .home-text{
+        
+        width: 90%;
+       }
+       .home-img{
+        width: 110%;
+       }
+      .home-text h1{
+        font-size: 50px;
+        align-items: center;
+      }
+      .nav{
+        padding-left: 10px; 
+     }
+     .nav li{
+        font-size: 31px;
+    }
+
+     .logo{
+        font-size: 40px;
+        margin-left: 70px;
+     }
     }
