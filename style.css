@@ -34,7 +34,7 @@ header{
    border-radius: 2px;
    transform: scale(1.2);
    border-style: hidden;
-   background-image: url("logo2.jpg");
+   background-image: url("../3aaisha_Calligraphy/images/logo2.jpg");
    outline-style: groove;
    outline-color: #C7AB59;
    outline-width: 5px;
@@ -301,7 +301,7 @@ header{
     cursor: pointer;
 }
 .contacts{
-    background: url(../3aaisha_Calligraphy/logo4.jpg);
+    background: url(../3aaisha_Calligraphy/images/logo4.jpg);
     width: 100%;
     margin: 100px auto;
     padding: 70px 150px;
