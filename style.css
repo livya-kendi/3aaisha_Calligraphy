@@ -417,6 +417,7 @@ input[type="submit"], button{
     font-weight: bold;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
   @media screen and (max-width: 1024px) {
@@ -424,16 +425,27 @@ input[type="submit"], button{
     {  grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
         align-items: center;
-        grid-gap: 4rem;}
+        grid-gap: 4rem;
+    height: 150%;}
 
         .nav{
-            position: sticky;
-            display: flex; 
             padding-left: 200px;
-            margin-top: 50px;
-            margin-bottom: 40px;
-            
-         }
+            margin-top: 110px;
+            z-index: 1000;
+        }
+
+         .about-text{
+         width: 150%;}
+
+         header{
+            width: 110%;
+            padding: 10px;
+            height: 80px;
+        }
+        .logo{
+            margin-left: 300px;
+        }
+        
   }
 
   @media screen and (max-width: 768px) {
@@ -455,28 +467,26 @@ input[type="submit"], button{
             font-size: 25px;
             padding: 10px 30px;
          }
-         .about{
-          margin-bottom: 40px;
+        .about{
+            padding-right: 30px;
         }
-        .about-img img{
-            width: 350px;
-            max-width: 100%;
-            height: auto;
+        .about.about-img img{
+            width: 100px;
             border-radius: 50%;
             border-style: groove;
             border-color: #C7AB59;
-            max-width: 100%;
             background-color: #C7AB59;
         }
         .about-text{
-            padding-right: 10px;}
+            width: 200%;}
+        
 
         .logo{
             margin-left: 200px;
         }
         .nav{
             padding-left: 100px;
-            margin-top: 50px;
+            margin-top: 100px;
             margin-bottom: 40px;
             
          }
@@ -497,9 +507,12 @@ input[type="submit"], button{
     }
     .nav{
         padding-left: 70px;
-        margin-top: 50px;
-        margin-bottom: 40px;
-        
+        margin-top: 100px;
+        margin-bottom: 40px;  
+     }
+     .about-text{
+        width: 150%;
+        padding-right: 50px;
      }
   }
   @media screen and (max-width: 480px) {
@@ -509,7 +522,7 @@ input[type="submit"], button{
     .home{
         min-height: 100vh;
         width: 100%;
-        background: url(../3aaisha_Calligraphy/logo4.jpg);
+        background: url(../3aaisha_Calligraphy/images/logo4.jpg);
         background-size: cover;
         background-position: center;
         position: relative;
@@ -547,7 +560,7 @@ input[type="submit"], button{
         }
         .nav{
             padding-left: 0px;
-            margin-top: 50px;
+            margin-top: 100px;
             margin-bottom: 40px;  
          }
          
@@ -616,5 +629,11 @@ input[type="submit"], button{
             font-size: 20px;
             margin-right: 10px;
             display: inline-flex;
+        }
+        .about-img{
+            width: 400px;
+        }
+        .about-text{
+            width: 100%;
         }
     }
