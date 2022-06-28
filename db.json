@@ -11,18 +11,6 @@
     {
       "id": 3,
       "review": "The artworks are amazing"
-    },
-    {
-      "review": "test",
-      "id": 4
-    },
-    {
-      "review": "Test 2",
-      "id": 5
-    },
-    {
-      "review": "Load ",
-      "id": 6
     }
   ]
 }
